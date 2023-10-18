@@ -1,0 +1,64 @@
+<p>register works!</p>
+
+<div class="container">
+  <div class="row">
+      <div class="col-5 border border-3 border-info rounded-4">
+        <div class="form-group">
+          <form #signUpForm="ngForm" (ngSubmit)="save(signUpForm)">
+              <div class="row m-5">
+                <div class="col-3">
+                  <label for="unm" class="col-sm-1 col-form-label"> Username: </label>
+                </div>
+                <div class="col-7">
+                  <input type="text" class="form-control" id="unm" name="username" ngModel>
+                </div>
+              </div>
+              
+              <div class="row m-5">
+                <div class="col-3">
+                  <label for="unm" class="col-sm-1 col-form-label"> Date_of_Birth: </label>
+                </div>
+                <div class="col-7">
+                  <input type="text" class="form-control" id="dob" name="dob" ngModel>
+                </div>
+              </div>
+
+              <div class="row m-5">
+                <div class="col-3">
+                  <label for="unm" class="col-sm-1 col-form-label"> Email: </label>
+                </div>
+                <div class="col-7">
+                  <input type="text" class="form-control" id="email" name="email" ngModel>
+                </div>
+              </div>
+
+              <div class="row m-5">
+                <div class="col-3">
+                  <label for="pwd" class="col-sm-1 col-form-label"> Password: </label>
+                </div>
+                <div class="col-7">
+                  <input type="password" class="form-control" id="pwd" name="password" ngModel>
+                </div>
+              </div>
+              <div class="row m-5">
+                <div class="col-4">
+                  <label for="unm" class="col-sm-1 col-form-label"> Confirm_Password: </label>
+                </div>
+                <div class="col-7">
+                  <input type="password" class="form-control" id="cpassword" name="cpassword" ngModel>
+                </div>
+              </div>
+                  <button type="submit" class="col-9 btn btn-primary-lg"> REGISTER  </button>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+
+    <div *ngIf="signUpStatus">
+        {{ user.username }} Welcome 
+    </div>
+
+    <div *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>

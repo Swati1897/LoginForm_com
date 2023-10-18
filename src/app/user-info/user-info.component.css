@@ -1,0 +1,13 @@
+img{
+    width:40px;
+}
+.fa-gear{
+    color: #0c6ef7;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.fa-circle-xmark{
+    color: red;
+    font-size: 25px;
+}

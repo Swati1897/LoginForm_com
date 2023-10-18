@@ -1,0 +1,23 @@
+/* *{
+    background-color: #1c807e;
+} */
+.container{
+    margin: 30px;
+    padding: 40px;
+}
+
+.btn{
+    background-color: #0cf7f3;
+    margin: 20px;
+    margin-left: 55px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+button:hover{
+    background-color: #0cf7f3;
+}
+/* input{
+    border: 2px solid #646968;
+    background-color: #646968;
+} */
