@@ -1,9 +1,6 @@
-/* *{
-    background-color: #1c807e;
-} */
 .container{
-    margin: 30px;
-    padding: 40px;
+    margin-left: 30rem;
+    padding: 5px;
 }
 
 .btn{
@@ -17,7 +14,33 @@
 button:hover{
     background-color: #0cf7f3;
 }
-/* input{
-    border: 2px solid #646968;
-    background-color: #646968;
-} */
+h2{
+    text-align: center;
+    background-color: #0cf7f3;
+    margin: 5px;
+    padding: 5px;
+}
+
+img{
+    margin-left: 12rem;
+    margin-top: 0.5rem;
+}
+a{
+    color: #0cf7f3;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.form-check{
+    color: #0cf7f3;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+ .data{
+    /* margin: 1rem; */
+    margin-left: 20rem;
+    padding: 0.5rem;
+    background-color: #1feeeb;
+}

@@ -1,10 +1,21 @@
-<p>register works!</p>
+<!-- <p>register works!</p> -->
+<div class="container">
+    <div class="row data">
+      <div *ngIf="signUpStatus">
+        <h3>{{ user.username }} Welcome </h3>
+      </div>
+      <div *ngIf="errorMessage">
+        <h3> {{ errorMessage }} </h3>
+      </div>
+    </div>
+</div>
 
 <div class="container">
   <div class="row">
       <div class="col-5 border border-3 border-info rounded-4">
         <div class="form-group">
           <form #signUpForm="ngForm" (ngSubmit)="save(signUpForm)">
+            <h2>Registration Form</h2>
               <div class="row m-5">
                 <div class="col-3">
                   <label for="unm" class="col-sm-1 col-form-label"> Username: </label>
@@ -55,10 +66,10 @@
   </div>
 </div>
 
-    <div *ngIf="signUpStatus">
+    <!-- <div *ngIf="signUpStatus">
         {{ user.username }} Welcome 
     </div>
 
     <div *ngIf="errorMessage">
       {{ errorMessage }}
-    </div>
+    </div> -->

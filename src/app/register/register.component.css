@@ -1,9 +1,29 @@
+.container{
+    margin-left: 30rem;
+    margin-top: 0.7rem;
+    /* padding: 0px; */
+}
+
 .btn{
     background-color: #0cf7f3;
     margin: 20px;
     margin-left: 55px;
     text-align: center;
+    font-size: 20px;
+    font-weight: 600;
 }
 button:hover{
     background-color: #0cf7f3;
+}
+h2{
+    text-align: center;
+    background-color: #0cf7f3;
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.data{
+    margin-left: 32rem;
+    padding: 0.5rem;
+    background-color: #1feeeb;
 }

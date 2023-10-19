@@ -1,7 +1,16 @@
+<div class="container">
+      <div class="row data">
+          <div *ngIf="loginStatus">
+            <h3> {{user.username}} Welcome {{loginStatus}}</h3>
+          </div>
+      </div>
+</div>
 
 <div class="container">
-  <div class="form-group border border-3 border-dark rounded-4 col-5">
+  <div class="form-group border border-3 border-info rounded-4 col-5">
     <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <h2> SIGN IN </h2> 
+      <img src="assets/images/person2.png" alt="">
         <div class="m-5 col-9">
           <input type="text" class="form-control" id="unm" name="username" placeholder="Username" ngModel>
         </div>
@@ -20,7 +29,7 @@
             </div>
           </div>
           <div class="col">
-            <a routerLink="/register"> Forget password?</a>
+            <a routerLink="/register"> Forgot your password?</a>
           </div>
         </div>
             <button type="submit" class="col-9 btn btn-primary-lg"> LOGIN  </button>
@@ -29,10 +38,10 @@
 
 </div>
 
-<div *ngIf="loginStatus">
+<!-- <div *ngIf="loginStatus">
 
     {{user.username}} Welcome {{loginStatus}}
-</div>
+</div> -->
 
 <!-- login form -->
 

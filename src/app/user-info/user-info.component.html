@@ -1,9 +1,26 @@
-<p>user-info works!</p>
+<!-- <p>user-info works!</p> -->
 
-<h2> {{ respData | json }}</h2>
+<!-- <div class="container">
+    <div class="row data">
+      <h3> {{ respData | json }}</h3>
+    </div>
+</div> -->
+
+<!-- <h2> {{ respData | json }}</h2> -->
+
+
+<!-- <div class="container">
+    <h2 *ngIf="condition"> condition true  {{ respData | json }} </h2>
+
+    <h2 *ngIf="!condition"> Condition False.</h2>
+</div> -->
+
+
+
 
 <!--   Static table  -->
-<div class="container">
+<div class="container" *ngIf="condition">
+  <h3> {{ respData | json }}</h3>
     <div class="row">
         <div class="col-12">
             <table class="table border-info">
